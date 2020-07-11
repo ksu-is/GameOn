@@ -1,5 +1,18 @@
+#Sprint 1
 [x] Create Repository in KSU-IS
-[] Find related repository and evaluate it
-[] Clone the repository to the GameOn repository
+[x] Create ReamMe.md
+[x] Find related repository and evaluate it
+    https://github.com/Blankj/AutoCheckEditTextDemo.git
+[x] Clone repository to team
+
+#Sprint 2
 [x] Get the framework for GameOn program sorted
-[]
+[] Fill out options of games
+[] Fill links list with links to games
+[] Fix indentation errors
+
+#Sprint 3
+[] Comment and organize GameOn code
+[] Make sure it runs as intended, test extensively
+[] Create Powerpoint slide introducing project and upload it
+
