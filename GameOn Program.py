@@ -5,8 +5,8 @@ select = ''
 
 #GameOn Program
 def gameOn(con,gen):
-    global select
-    #Check for valid inputs
+    global select #Allow select variable to be accessed inside of program
+    #Check for console
     if con == 'xbox':
         if gen == 'adventure':
             while select != 'y':
@@ -353,7 +353,7 @@ def gameOn(con,gen):
                         print('Invalid input')
                 select = ''
         
-
+#Check for console
     elif con == 'ps4':
         if gen == 'adventure':
                 print('Marvel\'s Spider Man (2018)\nRated - T')
@@ -694,7 +694,7 @@ def gameOn(con,gen):
                         print('Invalid input')
                 select = ''
         
-
+#Check for console
     elif con == 'switch':
         if gen == 'adventure':
             while select != 'y':
@@ -1041,7 +1041,7 @@ def gameOn(con,gen):
                         print('Invalid input')
                 select = ''
         
-
+#Check for computer
     elif con == 'pc':
         if gen == 'adventure':
             while select != 'y':
@@ -1488,7 +1488,7 @@ links = ['https://www.gamestop.com/video-games/xbox-one/games/products/rise-of-t
 
 print('Welcome to GameOn - Your personal video game suggester\n')
 
-#Select a valid console
+#Put user in an input loop until they give a valid console
 while True:
     console = input('Please enter your preferred video game platform.\nType "Xbox" for the Xbox One, \n"PS4" for the Playstation 4, \n"Switch" for the Nintendo Switch, \nor "PC" for your personal computer\nEnter: ').lower()
     if console == 'xbox' or console == 'ps4' or console == 'switch' or console == 'pc':
@@ -1497,7 +1497,7 @@ while True:
     else:
         print('Invalid input\n')
 
-#Select a valid genre
+#Put user in an input loop until they give a valid genre
 while True:
     genre = input('Please enter one of the following genres to search for:\nAdventure, Puzzle, RPG, Sports, Strategy\nEnter: ').lower()
     if genre == 'adventure' or genre == 'puzzle' or genre == 'rpg' or genre == 'sports' or genre == 'strategy':
@@ -1506,4 +1506,4 @@ while True:
     else:
         print('Invalid input\n')
 
-gameOn(console, genre)
+gameOn(console, genre) #run program
